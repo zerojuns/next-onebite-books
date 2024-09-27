@@ -6,13 +6,12 @@ export default function BookItem({
     id,
     title,
     subTitle,
-    description,
     author,
     publisher,
     coverImgUrl
 }:BookData){
     return (<Link href={`/book/${id}`} className={style.container}>
-        <img src={coverImgUrl}></img>
+        <img src={coverImgUrl} alt="example image" ></img>
         <div>
             <div className={style.title}>{title}</div>
             <div className={style.subTitle}>{subTitle}</div>
